@@ -4,12 +4,18 @@ from sklearn.preprocessing import MinMaxScaler
 from sklearn.preprocessing import OneHotEncoder
 from sklearn.compose import ColumnTransformer
 from sklearn.tree import DecisionTreeClassifier
+from PIL import Image
+
 
 # Title
 st.write('Nama : Hasan Nur Wakhid')
 st.write('NIM : A11.2021.13853')
 st.write('Kelp : A11.4404')
 st.title('Prediksi Terkena Penyakit Jantung')
+
+image = Image.open('gambar.jpeg')
+st.image(image, use_column_width=True)
+
 st.write('Gagal jantung adalah kondisi medis yang terjadi ketika jantung tidak dapat memompa darah dengan efektif seperti yang seharusnya. Ini terjadi ketika otot jantung yang bertanggung jawab untuk memompa darah mengalami kerusakan atau melemah, sehingga tidak mampu memenuhi kebutuhan darah tubuh secara optimal.')
 st.write('Silahkan isi form berikut: ')
 
